@@ -1,5 +1,5 @@
 ---
-title: Fix Screen Burpsuite-Java
+title: Fixing gaps around terminal windows Burpsuite
 date: 2019-04-02
 thumbnail:
   src: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBTmuc6VHPLGrTOrt4rtfhOIuJBMWqvTBesQ6i-tBgLkFMbP_tvtrLERRI80BTgwXCk4SzqqMdn-PNorv4YK6CBEde6Cg=s2560"
@@ -15,6 +15,14 @@ categories:
   - "DWM"
 ---
 
+If there are empty gaps of desktop space outside terminal windows, it is likely due to the terminal's font size. Either adjust the size until finding the ideal scale that closes the gap, or toggle resizehints to 0 in config.h.
+
+This will cause dwm to ignore resize requests from all client windows, not just terminals. The downside to this workaround is that some terminals may suffer redraw anomalies, such as ghost lines and premature line wraps, among others.
+
+<!--more-->
+
+Alternatively, if you use the st terminal emulator, you can apply the anysize patch and recompile st.
+see this [doc](https://wiki.archlinux.org/title/Dwm#Fixing_misbehaving_Java_applications).
 <aside>
 💡 This template documents about config “dwm” written by c.
 

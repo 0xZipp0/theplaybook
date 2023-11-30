@@ -11,6 +11,10 @@ categories:
   - "Suckless"
 ---
 
+The suckless developers created DWM, which stands for dynamic window manager. It’s a tiling window manager with a minimalist design. It takes less than 500MB of RAM and only a few processes when it first starts up. First and foremost, there is only one correct way to install dwm and other Suckless tools: from source (either straight from suckless.org).
+
+<!--more-->
+
 <aside>
 💡 DWM Guidelines
 
