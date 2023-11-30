@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://0xZipp0.github.io/theplaybook/post/about/</loc>
+  </url><url>
     <loc>https://0xZipp0.github.io/theplaybook/tags/arch/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -34,6 +36,12 @@
   </url><url>
     <loc>https://0xZipp0.github.io/theplaybook/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://0xZipp0.github.io/theplaybook/post/notes/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://0xZipp0.github.io/theplaybook/post/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://0xZipp0.github.io/theplaybook/tags/dwm/</loc>
     <lastmod>2017-04-02T00:00:00+00:00</lastmod>

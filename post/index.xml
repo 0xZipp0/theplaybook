@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on yusuf aziz mustofa</title>
+    <link>https://0xZipp0.github.io/theplaybook/post/</link>
+    <description>Recent content in Posts on yusuf aziz mustofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://0xZipp0.github.io/theplaybook/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://0xZipp0.github.io/theplaybook/post/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/post/about/</guid>
+      <description>Greetings! I&amp;rsquo;m Yusuf, a passionate full-time learner and a vulnerability analyst. My mission? Strengthening attack surfaces that could potentially wreak havoc. My deep-rooted fascination lies in Information Technology, specifically in fortifying systems against unwarranted intrusion by hackers. To deepen my expertise in this realm, I actively pursued the study of cyber security alongside my formal education. Furthermore, I was fortunate enough to become a part of Surabaya Hacker Link, an esteemed non-profit community that exposed me to invaluable insights and broadened my understanding of cutting-edge security practices.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux &#43; DWM SUckless</title>
+      <link>https://0xZipp0.github.io/theplaybook/post/notes/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/post/notes/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

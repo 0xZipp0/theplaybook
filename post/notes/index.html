@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arch Linux &#43; DWM SUckless - yusuf aziz mustofa</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="dwm is a dynamic window manager for X.">
+		<meta property="og:title" content="Arch Linux &#43; DWM SUckless" />
+<meta property="og:description" content="dwm is a dynamic window manager for X." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://0xZipp0.github.io/theplaybook/post/notes/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-04-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-16T00:00:00+00:00" />
+
+		<meta itemprop="name" content="Arch Linux &#43; DWM SUckless">
+<meta itemprop="description" content="dwm is a dynamic window manager for X."><meta itemprop="datePublished" content="2018-04-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-04-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1711">
+<meta itemprop="keywords" content="Linux,Arch," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Arch Linux &#43; DWM SUckless"/>
+<meta name="twitter:description" content="dwm is a dynamic window manager for X."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/theplaybook/css/style.css">
+	<link rel="stylesheet" href="/theplaybook/background.css">
+
+	<link rel="shortcut icon" href="/theplaybook/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/theplaybook/" title="playbook" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">playbook</div>
+					<div class="logo__tagline">Just another playbook note</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/theplaybook/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item menu__item--active">
+			<a class="menu__link" href="/theplaybook/post/notes/">
+				
+				<span class="menu__text">Notes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/theplaybook/post/about/">
+				
+				<span class="menu__text">About Me</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Arch Linux &#43; DWM SUckless</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-04-16T00:00:00Z">2018-04-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/theplaybook/categories/development/" rel="category">Development</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-install-stepshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45pre-install-steps"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#pre-install-steps">Pre-install steps</a></a>
+      <ul>
+        <li><a href="#download-and-verify-arch-linux-mediahttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45download-and-verify-arch-linux-media"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#download-and-verify-arch-linux-media">Download and verify Arch Linux media</a></a></li>
+        <li><a href="#create-virtual-machinehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45create-virtual-machine"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#create-virtual-machine">Create Virtual Machine</a></a></li>
+        <li><a href="#boot-system-to-arch-linux-live-distrohttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45boot-system-to-arch-linux-live-distro"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#boot-system-to-arch-linux-live-distro">Boot system to Arch Linux live distro</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#install-stepshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-steps"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-steps">Install steps</a></a>
+      <ul>
+        <li><a href="#check-system-capabilitieshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45check-system-capabilities"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#check-system-capabilities">Check system capabilities</a></a></li>
+        <li><a href="#verify-boot-modehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45verify-boot-mode"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#verify-boot-mode">Verify boot mode</a></a></li>
+        <li><a href="#verify-network-availabilityhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45verify-network-availability"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#verify-network-availability">Verify network availability</a></a></li>
+        <li><a href="#internet-connectionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinternet-connection"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#internet-connection">Internet connection</a></a></li>
+        <li><a href="#add-best-arch-mirrorshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-best-arch-mirrors"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-best-arch-mirrors">Add best Arch mirrors</a></a></li>
+        <li><a href="#sync-network-timehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45sync-network-time"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#sync-network-time">Sync network time</a></a></li>
+        <li><a href="#configure-storagehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-storage"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-storage">Configure storage</a></a></li>
+        <li><a href="#write-partition-tablehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45write-partition-table"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#write-partition-table">Write partition table</a></a></li>
+        <li><a href="#partition-diskhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpartition-disk"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#partition-disk">Partition disk</a></a></li>
+        <li><a href="#clear-partitions-tablehttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbclear-partitions-table"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#clear-partitions-table">Clear partitions table</a></a></li>
+        <li><a href="#efi-partition-boothttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbefi-partition-boot"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#efi-partition-boot">EFI partition (boot)</a></a></li>
+        <li><a href="#swap-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbswap-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#swap-partition">SWAP partition</a></a></li>
+        <li><a href="#root-partition-httpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbroot-partition-"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#root-partition-">Root partition (/)</a></a></li>
+        <li><a href="#home-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbhome-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#home-partition">Home partition</a></a></li>
+        <li><a href="#data-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbdata-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#data-partition">Data partition</a></a></li>
+        <li><a href="#save-changes-and-exithttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbsave-changes-and-exit"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#save-changes-and-exit">Save changes and exit</a></a></li>
+        <li><a href="#format-partitionshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbformat-partitions"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#format-partitions">Format partitions</a></a></li>
+        <li><a href="#mount-partitionshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbmount-partitions"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#mount-partitions">Mount partitions</a></a></li>
+        <li><a href="#install-packages-and-chroot-into-systemhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-packages-and-chroot-into-system"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-packages-and-chroot-into-system">Install packages and chroot into system</a></a></li>
+        <li><a href="#install-essential-packageshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-essential-packages"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-essential-packages">Install essential packages</a></a></li>
+        <li><a href="#update-systems-filesystem-tablehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45update-systems-filesystem-table"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#update-systems-filesystem-table">Update system&rsquo;s filesystem table</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#add-basic-configurationhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-basic-configuration"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-basic-configuration">Add basic configuration</a></a>
+      <ul>
+        <li><a href="#enter-the-new-systemhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenter-the-new-system"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enter-the-new-system">Enter the new system</a></a></li>
+        <li><a href="#language-related-settingshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dblanguage-related-settings"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#language-related-settings">Language-related settings</a></a></li>
+        <li><a href="#configure-timezonehttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbconfigure-timezone"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#configure-timezone">Configure timezone</a></a></li>
+        <li><a href="#enable-ssh-networkmanager-and-dhcphttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenable-ssh-networkmanager-and-dhcp"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enable-ssh-networkmanager-and-dhcp">Enable SSH, NetworkManager and DHCP</a></a></li>
+        <li><a href="#set-root-passwordhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45set-root-password"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#set-root-password">Set root password</a></a></li>
+        <li><a href="#configure-networkinghttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-networking"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-networking">Configure networking</a></a></li>
+        <li><a href="#set-hostname-and-hosts-aliaseshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45set-hostname-and-hosts-aliases"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#set-hostname-and-hosts-aliases">Set hostname and hosts aliases</a></a></li>
+        <li><a href="#generate-boot-image-and-configure-boot-loader-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45generate-boot-image-and-configure-boot-loader-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#generate-boot-image-and-configure-boot-loader-grub">Generate boot image and configure boot loader (GRUB)</a></a></li>
+        <li><a href="#update-initial-ramdiskhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45update-initial-ramdisk"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#update-initial-ramdisk">Update initial ramdisk</a></a></li>
+        <li><a href="#install-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-grub">Install GRUB</a></a></li>
+        <li><a href="#configure-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-grub">Configure GRUB</a></a></li>
+        <li><a href="#install-other-useful-packageshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-other-useful-packages"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-other-useful-packages">Install other useful packages</a></a></li>
+        <li><a href="#final-stepshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbfinal-steps"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#final-steps">Final steps</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#post-install-configurationhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpost-install-configuration"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#post-install-configuration">Post-install configuration</a></a>
+      <ul>
+        <li><a href="#add-your-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-your-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-your-user">Add your user</a></a></li>
+        <li><a href="#grant-root-access-to-our-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbgrant-root-access-to-our-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#grant-root-access-to-our-user">Grant root access to our user</a></a></li>
+        <li><a href="#login-into-newly-created-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dblogin-into-newly-created-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#login-into-newly-created-user">Login into newly created user</a></a></li>
+        <li><a href="#install-aur-package-managerhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-aur-package-manager"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-aur-package-manager">Install AUR package manager</a></a></li>
+        <li><a href="#the-coolest-pacmanhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbthe-coolest-pacman"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#the-coolest-pacman">The coolest Pacman</a></a></li>
+        <li><a href="#pulseaudio-applethttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpulseaudio-applet"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#pulseaudio-applet">PulseAudio applet</a></a></li>
+        <li><a href="#manage-bluetoothhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbmanage-bluetooth"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#manage-bluetooth">Manage Bluetooth</a></a></li>
+        <li><a href="#improve-laptop-battery-consumptionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbimprove-laptop-battery-consumption"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#improve-laptop-battery-consumption">Improve laptop battery consumption</a></a></li>
+        <li><a href="#enable-ssd-trimhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenable-ssd-trim"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enable-ssd-trim">Enable SSD TRIM</a></a></li>
+        <li><a href="#install-some-basic-fontshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-some-basic-fonts"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-some-basic-fonts">Install some basic fonts</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="pre-install-stepshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45pre-install-steps"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#pre-install-steps">Pre-install steps</a></h2>
+<h3 id="download-and-verify-arch-linux-mediahttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45download-and-verify-arch-linux-media"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#download-and-verify-arch-linux-media">Download and verify Arch Linux media</a></h3>
+<p>Download the current version of Arch Linux to a location on your filesystem. See the <a href="https://wiki.archlinux.org/index.php/Installation_guide#Acquire_an_installation_image">Acquire an installation image</a> and <a href="https://wiki.archlinux.org/index.php/Installation_guide#Verify_signature">Verify Signature</a> sections of the Arch Linux installation guide for instructions on how to retrieve and verify the current version of Arch Linux.s</p>
+<p>I used <a href="http://mirror.arizona.edu/archlinux/iso/2020.08.01/">archlinux-2020.08.01-x86_64.iso</a> with kernel <code>5.7.12-arch1-1</code> for this gist.</p>
+<h3 id="create-virtual-machinehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45create-virtual-machine"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#create-virtual-machine">Create Virtual Machine</a></h3>
+<p>I&rsquo;m going to trust that you have a good understanding of your hypervisor of choice for this bit =)</p>
+<p>There are a handful of VM settings that really matter for this gist:</p>
+<ul>
+<li>Guest operating system:
+<ul>
+<li><strong>VMware Workstation:</strong> Other Linux 5.x or later kernel 64-bit (<code>other5xlinux-64</code>)</li>
+<li><strong>Oracle VirtualBox:</strong> Arch Linux x64</li>
+</ul>
+</li>
+<li>Optical drive for mounting install media</li>
+<li>20GB virtual disk (commands in this gist are geared toward this size)</li>
+<li>SCSI or SATA disk controller (VMware Paravirtual and LSI Logic were tested, as well as VirtualBox SATA)</li>
+<li>UEFI boot mode:
+<ul>
+<li><strong>VMware Workstation:</strong> VM &gt; Settings &gt; Options &gt; Advanced &gt; UEFI</li>
+<li><strong>Oracle VirtualBox:</strong> VM &gt; Settings &gt; System &gt; Motherboard &gt; Enable EFI (special OSes only)</li>
+</ul>
+</li>
+<li>Network adapter connected to a network that provides <a href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">DHCP</a> (NAT, or usually Bridged)</li>
+</ul>
+<p>Aside from the above, configure the virtual machine to your liking.</p>
+<h3 id="boot-system-to-arch-linux-live-distrohttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45boot-system-to-arch-linux-live-distro"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#boot-system-to-arch-linux-live-distro">Boot system to Arch Linux live distro</a></h3>
+<p>Mount the ISO image in the optical drive, start the virtual machine, and boot into the live Arch Linux installation distro.</p>
+<h2 id="install-stepshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-steps"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-steps">Install steps</a></h2>
+<h3 id="check-system-capabilitieshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45check-system-capabilities"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#check-system-capabilities">Check system capabilities</a></h3>
+<h3 id="verify-boot-modehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45verify-boot-mode"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#verify-boot-mode">Verify boot mode</a></h3>
+<p>List contents of the efivars directory to verify boot mode is UEFI:</p>
+<pre tabindex="0"><code>ls /sys/firmware/efi/efivars
+</code></pre><p>If you get an error indicating that the directory does not exist, the system did not boot using UEFI, and you need to enable UEFI boot in VM settings</p>
+<h3 id="verify-network-availabilityhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45verify-network-availability"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#verify-network-availability">Verify network availability</a></h3>
+<p>Use the following commands to check interface status and IP addressing:</p>
+<pre tabindex="0"><code>ip link
+ip addr
+</code></pre><p>Example output:</p>
+<pre tabindex="0"><code>root@archiso ~ # ip link
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens33: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:0c:29:98:d8:51 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+
+root@archiso ~ # ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens33: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:98:d8:51 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    inet 192.168.5.141/24 brd 192.168.5.255 scope global dynamic ens33
+       valid_lft 1630sec preferred_lft 1630sec
+    inet6 fe80::20c:29ff:fe98:d851/64 scope link
+       valid_lft forever preferred_lft forever
+</code></pre><p>Your interface name will vary depending on <em>factors</em>, but <code>lo</code> is <strong>not</strong> the one you&rsquo;re looking for - if that&rsquo;s the only interface you see, you&rsquo;ll need to troubleshoot. Some common primary interface names are <code>eth0</code>, <code>ens33</code>, <code>ens160</code>, and <code>enp0s3</code>. The default in VMware Workstation 15 is <code>ens33</code>.</p>
+<h3 id="internet-connectionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinternet-connection"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#internet-connection">Internet connection</a></h3>
+<p>To make sure you have an internet connection, you have to ask Mr. Google:</p>
+<pre tabindex="0"><code>   # ping 8.8.8.8
+</code></pre><h3 id="add-best-arch-mirrorshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-best-arch-mirrors"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-best-arch-mirrors">Add best Arch mirrors</a></h3>
+<p>To install arch you have to download packages. It&rsquo;s a good idea to download them from the best connection mirror.</p>
+<pre tabindex="0"><code>   # pacman -Sy
+   # pacman -S reflector
+   # reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+</code></pre><h3 id="sync-network-timehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45sync-network-time"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#sync-network-time">Sync network time</a></h3>
+<p>Ensure the system clock is synced (this is important for encrypted connections to succeed):</p>
+<pre tabindex="0"><code>timedatectl set-ntp true
+</code></pre><h3 id="configure-storagehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-storage"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-storage">Configure storage</a></h3>
+<h3 id="write-partition-tablehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45write-partition-table"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#write-partition-table">Write partition table</a></h3>
+<h3 id="partition-diskhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpartition-disk"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#partition-disk">Partition disk</a></h3>
+<p>Your primary disk will be known from now on as <code>sda</code>. You can check if this is really your primary disk:</p>
+<pre tabindex="0"><code>   # lsblk
+</code></pre><p>Feel free to adapt the rest of the guide to <code>sdb</code> or any other if you want to install Arch on a secondary hard drive.</p>
+<p>This guide will use a 250GB hard disk and will have only Arch Linux installed. You&rsquo;ll create 5 partitions of the disk (feel free to suit this to your needs).</p>
+<ul>
+<li><code>/dev/sda1</code> boot partition (1G).</li>
+<li><code>/dev/sda2</code> swap partition (4G).</li>
+<li><code>/dev/sda3</code> root partition (50G).</li>
+<li><code>/dev/sda4</code> home partition (100G).</li>
+<li><code>/dev/sda5</code> data partition (remaining disk space).</li>
+</ul>
+<p>You&rsquo;re going to start by removing all the previous partitions and creating the new ones.</p>
+<pre tabindex="0"><code>   # gdisk /dev/sda
+</code></pre><p>This interactive CLI program allows you to enter commands for managing your HD. I&rsquo;m going to show you only the commands you need to enter.</p>
+<h3 id="clear-partitions-tablehttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbclear-partitions-table"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#clear-partitions-table">Clear partitions table</a></h3>
+<pre tabindex="0"><code>   Command: O
+   Y
+</code></pre><h3 id="efi-partition-boothttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbefi-partition-boot"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#efi-partition-boot">EFI partition (boot)</a></h3>
+<pre tabindex="0"><code>   Command: N
+   ENTER
+   ENTER
+   +1G
+   EF00
+</code></pre><h3 id="swap-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbswap-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#swap-partition">SWAP partition</a></h3>
+<pre tabindex="0"><code>   Command: N
+   ENTER
+   ENTER
+   +4G
+   8200
+</code></pre><h3 id="root-partition-httpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbroot-partition-"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#root-partition-">Root partition (/)</a></h3>
+<pre tabindex="0"><code>   Command: N
+   ENTER
+   ENTER
+   +50G
+   8304
+</code></pre><h3 id="home-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbhome-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#home-partition">Home partition</a></h3>
+<pre tabindex="0"><code>   Command: N
+   ENTER
+   ENTER
+   +100G
+   8302
+</code></pre><h3 id="data-partitionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbdata-partition"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#data-partition">Data partition</a></h3>
+<pre tabindex="0"><code>   Command: N
+   ENTER
+   ENTER
+   ENTER
+   ENTER
+</code></pre><h3 id="save-changes-and-exithttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbsave-changes-and-exit"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#save-changes-and-exit">Save changes and exit</a></h3>
+<pre tabindex="0"><code>   Command: W
+   Y
+</code></pre><h3 id="format-partitionshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbformat-partitions"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#format-partitions">Format partitions</a></h3>
+<pre tabindex="0"><code>   # mkfs.fat -F32 /dev/sda1
+   # mkswap /dev/sda2
+   # mkfs.ext4 /dev/sda3
+   # mkfs.ext4 /dev/sda4
+   # mkfs.ext4 /dev/sda5
+</code></pre><h3 id="mount-partitionshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbmount-partitions"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#mount-partitions">Mount partitions</a></h3>
+<pre tabindex="0"><code>   # swapon /dev/sda2
+   # mount /dev/sda3 /mnt
+   # mkdir /mnt/{boot,home}
+   # mount /dev/sda1 /mnt/boot
+   # mount /dev/sda4 /mnt/home
+</code></pre><p>If you run the <code>lsblk</code> command you should see something like this:</p>
+<pre tabindex="0"><code>   NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+   sda      8:0    0 232.9G  0 disk
+   ├─sda1   8:1    0     1G  0 part /mnt/boot
+   ├─sda2   8:2    0     4G  0 part [SWAP]
+   ├─sda3   8:3    0    50G  0 part /mnt
+   ├─sda4   8:4    0   100G  0 part /mnt/home
+   └─sda5   8:5    0  77.9G  0 part
+</code></pre><h3 id="install-packages-and-chroot-into-systemhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-packages-and-chroot-into-system"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-packages-and-chroot-into-system">Install packages and chroot into system</a></h3>
+<h3 id="install-essential-packageshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-essential-packages"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-essential-packages">Install essential packages</a></h3>
+<p>Run the following commands to install essential packages into the mounted partitions:</p>
+<pre tabindex="0"><code>pacstrap /mnt linux linux-firmware grub efibootmgr vim base base-devel openssh
+</code></pre><p>Don&rsquo;t worry about any localization related errors you may receive - these will be resolved by future steps.</p>
+<p>While the <a href="https://wiki.archlinux.org/index.php/Installation_guide">installation guide</a> only includes the <code>base</code>, <code>linux</code> and <code>linux-firmware</code> packages in this command, these packages are the minimum required to progress with installation. The extra packages specified in this guide are:</p>
+<ul>
+<li><code>grub</code>: The boot loader we&rsquo;ll be using</li>
+<li><code>efibootmgr</code>: A utility used to modify the EFI boot manager</li>
+<li><code>lvm2</code>: Utilities for logical volume management (LVM)</li>
+<li><code>vim</code>: A text editor</li>
+</ul>
+<p>These are the same packages that would install using <code>pacman -S packagename</code>. You may want to install additional packages - go for it!</p>
+<h3 id="update-systems-filesystem-tablehttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45update-systems-filesystem-table"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#update-systems-filesystem-table">Update system&rsquo;s filesystem table</a></h3>
+<p>Use the following command to generate fstab format mount entries and append those entries to the new system&rsquo;s <code>/etc/fstab</code> file:</p>
+<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><h2 id="add-basic-configurationhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-basic-configuration"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-basic-configuration">Add basic configuration</a></h2>
+<h3 id="enter-the-new-systemhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenter-the-new-system"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enter-the-new-system">Enter the new system</a></h3>
+<pre tabindex="0"><code>   # arch-chroot /mnt
+</code></pre><h3 id="language-related-settingshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dblanguage-related-settings"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#language-related-settings">Language-related settings</a></h3>
+<pre tabindex="0"><code>   # vim /etc/locale.gen
+</code></pre><p>Now you have to uncomment the language of your choice, for example <code>en_US.UTF-8 UTF-8</code>.</p>
+<pre tabindex="0"><code>   # locale-gen
+   # vim /etc/locale.conf
+</code></pre><p>Add this content to the file:</p>
+<pre tabindex="0"><code>   LANG=en_US.UTF-8
+   LANGUAGE=en_US
+   LC_ALL=Cd
+</code></pre><pre tabindex="0"><code>   # nvim /etc/vconsole.conf
+</code></pre><p>Add this content to the file:</p>
+<pre tabindex="0"><code>   KEYMAP=us
+</code></pre><h3 id="configure-timezonehttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbconfigure-timezone"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#configure-timezone">Configure timezone</a></h3>
+<p>For this example I&rsquo;ll use &ldquo;Europe/Madrid&rdquo;, but adapt it to your zone.</p>
+<pre tabindex="0"><code>   # ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+   # hwclock —-systohc
+</code></pre><h3 id="enable-ssh-networkmanager-and-dhcphttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenable-ssh-networkmanager-and-dhcp"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enable-ssh-networkmanager-and-dhcp">Enable SSH, NetworkManager and DHCP</a></h3>
+<p>These services will be started automatically when the system boots up.</p>
+<pre tabindex="0"><code>   # pacman -S dhcpcd networkmanager network-manager-applet
+   # systemctl enable sshd
+   # systemctl enable dhcpcd
+   # systemctl enable NetworkManager
+</code></pre><h3 id="set-root-passwordhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45set-root-password"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#set-root-password">Set root password</a></h3>
+<p>Change the <code>root</code> user&rsquo;s password so login is possible on first boot into the new system:</p>
+<pre tabindex="0"><code>passwd
+</code></pre><h3 id="configure-networkinghttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-networking"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-networking">Configure networking</a></h3>
+<p>Run <code>ip link</code> to identify your interface name (<code>ens33</code> in this case):</p>
+<pre tabindex="0"><code>[root@archiso /]# ip link
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens33: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:0c:29:98:d8:51 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+</code></pre><p>Edit <code>/etc/systemd/network/20-wired.network</code> to configure DHCP for your interface:</p>
+<pre tabindex="0"><code>[Match]
+Name=ens33 enp0s1n- ens160 
+
+[Network]
+DHCP=yes
+</code></pre><p>Enable <code>systemd-networkd</code> and <code>sytemd-resolved</code> systemd services to start at boot:sas</p>
+<pre tabindex="0"><code>systemctl enable systemd-networkd systemd-resolved
+</code></pre><p>If you would prefer to set static addressing, or have multiple network interfaces, I recommend reviewing the <a href="https://wiki.archlinux.org/index.php/Systemd-networkd">systemd-networkd</a> documentation in the <a href="https://wiki.archlinux.org/">Arch Wiki</a>.</p>
+<h3 id="set-hostname-and-hosts-aliaseshttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45set-hostname-and-hosts-aliases"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#set-hostname-and-hosts-aliases">Set hostname and hosts aliases</a></h3>
+<p>Edit <code>/etc/hostname</code> and save the following line (or your preferred hostname) to it:</p>
+<pre tabindex="0"><code>arch.localdomain
+</code></pre><p>Edit <code>/etc/hosts</code> and save the following lines to it (modifying hostname as needed):</p>
+<pre tabindex="0"><code>127.0.0.1   localhost
+::1         localhost
+127.0.1.1   arch.localdomain arch
+</code></pre><h3 id="generate-boot-image-and-configure-boot-loader-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45generate-boot-image-and-configure-boot-loader-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#generate-boot-image-and-configure-boot-loader-grub">Generate boot image and configure boot loader (GRUB)</a></h3>
+<h3 id="update-initial-ramdiskhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45update-initial-ramdisk"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#update-initial-ramdisk">Update initial ramdisk</a></h3>
+<p>In order for the <code>/etc/mkinitcpio.conf</code> change to apply on system boot, we need to update our initial ramdisk (initramfs).</p>
+<p>Run the following command to generate a new initramfs image:</p>
+<pre tabindex="0"><code>mkinitcpio -P
+</code></pre><h3 id="install-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45install-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#install-grub">Install GRUB</a></h3>
+<p>-Run the following command to install the GRUB with an EFI target system/directory:</p>
+<pre tabindex="0"><code>p# grub-install --target=x86_64-efi --efi-directory=/efi
+
+&lt;/&gt; or &lt;/&gt;
+grub-install --efi-directory=/boot --bootloader-id=GRUB
+</code></pre><h3 id="configure-grubhttpsgistgithubcommiliarchdd19af34679417b18f1bcdb680728a45configure-grub"><a href="https://gist.github.com/miliarch/dd19af34679417b18f1bcdb680728a45#configure-grub">Configure GRUB</a></h3>
+<p>Generate GRUB configurations under the <code>/boot</code> and <code>/efi</code> partitions:</p>
+<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
+#grub-mkconfig -o /efi/EFI/arch/grub.cfg
+</code></pre><h3 id="install-other-useful-packageshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-other-useful-packages"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-other-useful-packages">Install other useful packages</a></h3>
+<pre tabindex="0"><code>   # pacman -S iw wpa_supplicant dialog intel-ucode git reflector lshw unzip
+   # pacman -S wget pulseaudio alsa-utils alsa-plugins pavucontrol xdg-user-dirs
+	 # pacman -S libx11 libxft libxinerama freetype2 fontconfig ttf-jetbrains-mono ttf-joypixels
+</code></pre><h3 id="final-stepshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbfinal-steps"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#final-steps">Final steps</a></h3>
+<pre tabindex="0"><code>   # exit
+   # umount -R /mnt
+   # swapoff /dev/sda2
+   # reboot
+</code></pre><h2 id="post-install-configurationhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpost-install-configuration"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#post-install-configuration">Post-install configuration</a></h2>
+<p>Now your computer has restarted and in the login window on the tty1 console you can log in with the root user and the password chosen in the previous step.</p>
+<h3 id="add-your-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbadd-your-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#add-your-user">Add your user</a></h3>
+<p>Assuming your chosen user is &ldquo;0x&rdquo;:</p>
+<pre tabindex="0"><code>   # useradd -m -g users -G wheel,storage,power,audio 0x
+   # passwd 0x
+</code></pre><h3 id="grant-root-access-to-our-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbgrant-root-access-to-our-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#grant-root-access-to-our-user">Grant root access to our user</a></h3>
+<pre tabindex="0"><code>   # EDITOR=vim visudo
+</code></pre><p>If you prefer not to be prompted for a password every time you run a command with &ldquo;sudo&rdquo; privileges you need to uncomment this linet</p>
+<pre tabindex="0"><code>   %wheel ALL=(ALL) NOPASSWD: ALL
+</code></pre><p>Or if you prefer the standard behavior of most Linux distros you need to uncomment this line:</p>
+<pre tabindex="0"><code>   %wheel ALL=(ALL) ALL
+</code></pre><h3 id="login-into-newly-created-userhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dblogin-into-newly-created-user"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#login-into-newly-created-user">Login into newly created user</a></h3>
+<pre tabindex="0"><code>   # su - 0x
+   $ xdg-user-dirs-update
+</code></pre><h3 id="install-aur-package-managerhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-aur-package-manager"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-aur-package-manager">Install AUR package manager</a></h3>
+<p>In this guide we&rsquo;ll install <a href="https://github.com/Jguer/yay">yay</a> as the AUR package manager. More about <a href="https://aur.archlinux.org/">AUR</a>.</p>
+<p>TL;DR AUR is a Community-driven package repository.</p>
+<pre tabindex="0"><code>   $ mkdir Sources
+   $ cd Sources
+   $ git clone https://aur.archlinux.org/yay.git
+   $ cd yay
+   $ makepkg -si
+</code></pre><h3 id="the-coolest-pacmanhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbthe-coolest-pacman"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#the-coolest-pacman">The coolest Pacman</a></h3>
+<p>If you want to make Pacman look cooler you can edit the configuration file and uncomment the <code>Color</code> option and add just below the <code>ILoveCandy</code> option.</p>
+<pre tabindex="0"><code>   $ sudo vim /etc/pacman.conf
+</code></pre><h3 id="pulseaudio-applethttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbpulseaudio-applet"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#pulseaudio-applet">PulseAudio applet</a></h3>
+<p>If you want to manage your computer&rsquo;s volume from a small icon in the systray:</p>
+<pre tabindex="0"><code>   $ yay -S pa-applet-git
+</code></pre><h3 id="manage-bluetoothhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbmanage-bluetooth"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#manage-bluetooth">Manage Bluetooth</a></h3>
+<pre tabindex="0"><code>   $ sudo pacman -S bluez bluez-utils blueman
+   $ sudo systemctl enable bluetooth
+</code></pre><h3 id="improve-laptop-battery-consumptionhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbimprove-laptop-battery-consumption"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#improve-laptop-battery-consumption">Improve laptop battery consumption</a></h3>
+<pre tabindex="0"><code>   $ sudo pacman -S tlp tlp-rdw powertop acpi
+   $ sudo systemctl enable tlp
+   $ sudo systemctl enable tlp-sleep
+   $ sudo systemctl mask systemd-rfkill.service
+   $ sudo systemctl mask systemd-rfkill.socket
+</code></pre><h3 id="enable-ssd-trimhttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbenable-ssd-trim"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#enable-ssd-trim">Enable SSD TRIM</a></h3>
+<pre tabindex="0"><code>   $ sudo systemctl enable fstrim.timer
+</code></pre><h3 id="install-some-basic-fontshttpsgistgithubcomfjpalacios441f2f6d27f25ee238b9bfcb068865dbinstall-some-basic-fonts"><a href="https://gist.github.com/fjpalacios/441f2f6d27f25ee238b9bfcb068865db#install-some-basic-fonts">Install some basic fonts</a></h3>
+<pre tabindex="0"><code>   $ sudo pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont
+   $ sudo pacman -S ttf-liberation ttf-droid ttf-roboto terminus-font
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/linux/" rel="tag">Linux</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/arch/" rel="tag">Arch</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar sidebar--left"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://0xZipp0.github.io/theplaybook/">
+	</form>
+</div>
+<div class="widget">
+	<h4 class="widget__title">Information</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                <img class="widget__link" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaAxmK9DUOJGfPay87UziNKw-EkMGTkrmgaxBImbjAI1lQ739TbSO9kszggBKH4NMLqmdPQrX6Bai-FHPl8z6erLwhNCMQ=s1600" alt="Di rumah saja">
+            </li>
+		</ul>
+	</div>
+</div>
+
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/fix-screen-jar/">Fix Screen Burpsuite-Java</a></li>
+			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/dwm/">Dynamic Window Manager (Suckless)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/cyber-security/">Cyber Security Academy</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/theplaybook/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/theplaybook/categories/dwm/">DWM</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/theplaybook/categories/suckless/">Suckless</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/theplaybook/categories/tryhackme/">tryhackme</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/arch/" title="Arch">Arch</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/development/" title="development">development</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/dwm/" title="DWM">DWM</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/linux/" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/pentesting/" title="pentesting">pentesting</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/security/" title="security">security</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/suckless/" title="Suckless">Suckless</a>
+		<a class="widget-taglist__link widget__link btn" href="/theplaybook/tags/tryhackme/" title="tryhackme">tryhackme</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/zippo_rhapsody" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/7n8.yusufhsn" target="_blank">
+				<svg class="widget-social__link-icon icon icon-instagram" width="24" height="24" viewBox="0 0 256 256"><circle cx="193" cy="59" r="15"/><path fill-rule="evenodd" d="M101 0h54c41 0 58.4 3.9 74.5 17C256.2 37.5 256 74.8 256 97.7v60c0 26.7 0 60.4-26.5 81.4-16 13.4-33.5 16.9-74.5 16.9h-54c-41 0-57.5-3.5-74.5-16.9C1 218.9.5 186.3.1 160.5L0 155V97.7c0-23-.2-60.2 26.5-80.7C45 2 60 0 101 0zm4.9 23h44.3c45.8 0 58.3 3.5 70.3 17.5 11.8 13.2 12 30.1 12.5 62.9V156c.2 20.8.3 45.8-12.5 59.5-12 14-24.5 17.5-70.3 17.5h-44.3c-45.9 0-57.3-3.5-70.4-17.5-12.2-13-12.3-36.5-12.4-56.7v-55.6c.4-32.6.7-49.6 12.4-62.7C48 26.5 60 23 105.9 23zm19.6 144.5a42 42 0 1 0 0-84 42 42 0 0 0 0 84zm0 22.5a64.5 64.5 0 1 0 0-129 64.5 64.5 0 0 0 0 129z"/></svg>
+				<span>Instagram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/yusufazizmustofa" target="_blank">
+				<svg class="widget-social__link-icon icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+				<span>LinkedIn</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/r4ph43l" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/0xZipp0" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 yusuf aziz mustofa.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/theplaybook/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
