@@ -2,7 +2,7 @@
 title: Fix Screen Burpsuite-Java
 date: 2019-04-02
 thumbnail:
-  src: "/theplaybook/public/burp-min.png"
+  src: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBTmuc6VHPLGrTOrt4rtfhOIuJBMWqvTBesQ6i-tBgLkFMbP_tvtrLERRI80BTgwXCk4SzqqMdn-PNorv4YK6CBEde6Cg=s2560"
   visibility:
     - list
 tags:
