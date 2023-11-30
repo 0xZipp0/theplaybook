@@ -1,6 +1,10 @@
 ---
 title: Fix Screen Burpsuite-Java
 date: 2019-04-02
+thumbnail:
+  src: "/theplaybook/public/burp-min.png"
+  visibility:
+    - list
 tags:
   - "Pentesting"
   - "Security"
