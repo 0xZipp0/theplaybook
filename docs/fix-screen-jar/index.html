@@ -4,24 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Fix Screen Burpsuite-Java - yusuf aziz mustofa</title>
+	<title>Fixing gaps around terminal windows Burpsuite - yusuf aziz mustofa</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Fix Screen Burpsuite-Java" />
-<meta property="og:description" content="This is the config.h file /* See LICENSE file for copyright and license details. */ /* appearance */ static const unsigned int borderpx = 3; /* border pixel of windows */ static const unsigned int gappx = 10; /* gaps between windows */ static const unsigned int snap = 32; /* snap pixel */ static const int swallowfloating = 0; /* 1 means swallow floating windows by default */ static const int showbar = 1; /* 0 means no bar */ static const int topbar = 1; /* 0 means bottom bar */ static const char *fonts[] = { &#34;JetBrains Mono:size=11&#34;, &#34;JoyPixels:pixelsize=11:antialias=true:autohint=true&#34;}; static const char dmenufont[] = &#34;JetBrains Mono:size=11&#34;; static char normbgcolor[] = &#34;#282a36&#34;; static char normbordercolor[] = &#34;#5b5b5b&#34;; static char normfgcolor[] = &#34;#d77309&#34;; static char selfgcolor[] = &#34;#bcbcbc&#34;; static char selbordercolor[] = &#34;#d77309&#34;; static char selbgcolor[] = &#34;#282a36&#34;; static char *colors[][3] = { /* fg bg border */ [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor }, [SchemeSel] = { selfgcolor, selbgcolor, selbordercolor }, }; /* tagging */ static const char *tags[] = { &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34; }; static const Rule rules[] = { /* xprop(1): *	WM_CLASS(STRING) = instance, class *	WM_NAME(STRING) = title */ /* class instance title tags mask isfloating isterminal noswallow monitor */ { &#34;TelegramDesktop&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;obs&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;Lutris&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;firefox&#34;, NULL, NULL, 1 &lt;&lt; 2, 0, 0, -1, -1 }, { &#34;St&#34;, NULL, NULL, 0, 0, 1, 0, -1 }, { NULL, NULL, &#34;Event Tester&#34;, 0, 0, 0, 1, -1 }, /* xev */ }; /* layout(s) */ static const float mfact = 0." />
+		<meta property="og:title" content="Fixing gaps around terminal windows Burpsuite" />
+<meta property="og:description" content="If there are empty gaps of desktop space outside terminal windows, it is likely due to the terminal&rsquo;s font size. Either adjust the size until finding the ideal scale that closes the gap, or toggle resizehints to 0 in config.h.
+This will cause dwm to ignore resize requests from all client windows, not just terminals. The downside to this workaround is that some terminals may suffer redraw anomalies, such as ghost lines and premature line wraps, among others." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://0xZipp0.github.io/theplaybook/docs/fix-screen-jar/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2019-04-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-04-02T00:00:00+00:00" />
 
-		<meta itemprop="name" content="Fix Screen Burpsuite-Java">
-<meta itemprop="description" content="This is the config.h file /* See LICENSE file for copyright and license details. */ /* appearance */ static const unsigned int borderpx = 3; /* border pixel of windows */ static const unsigned int gappx = 10; /* gaps between windows */ static const unsigned int snap = 32; /* snap pixel */ static const int swallowfloating = 0; /* 1 means swallow floating windows by default */ static const int showbar = 1; /* 0 means no bar */ static const int topbar = 1; /* 0 means bottom bar */ static const char *fonts[] = { &#34;JetBrains Mono:size=11&#34;, &#34;JoyPixels:pixelsize=11:antialias=true:autohint=true&#34;}; static const char dmenufont[] = &#34;JetBrains Mono:size=11&#34;; static char normbgcolor[] = &#34;#282a36&#34;; static char normbordercolor[] = &#34;#5b5b5b&#34;; static char normfgcolor[] = &#34;#d77309&#34;; static char selfgcolor[] = &#34;#bcbcbc&#34;; static char selbordercolor[] = &#34;#d77309&#34;; static char selbgcolor[] = &#34;#282a36&#34;; static char *colors[][3] = { /* fg bg border */ [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor }, [SchemeSel] = { selfgcolor, selbgcolor, selbordercolor }, }; /* tagging */ static const char *tags[] = { &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34; }; static const Rule rules[] = { /* xprop(1): *	WM_CLASS(STRING) = instance, class *	WM_NAME(STRING) = title */ /* class instance title tags mask isfloating isterminal noswallow monitor */ { &#34;TelegramDesktop&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;obs&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;Lutris&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;firefox&#34;, NULL, NULL, 1 &lt;&lt; 2, 0, 0, -1, -1 }, { &#34;St&#34;, NULL, NULL, 0, 0, 1, 0, -1 }, { NULL, NULL, &#34;Event Tester&#34;, 0, 0, 0, 1, -1 }, /* xev */ }; /* layout(s) */ static const float mfact = 0."><meta itemprop="datePublished" content="2019-04-02T00:00:00+00:00" />
+		<meta itemprop="name" content="Fixing gaps around terminal windows Burpsuite">
+<meta itemprop="description" content="If there are empty gaps of desktop space outside terminal windows, it is likely due to the terminal&rsquo;s font size. Either adjust the size until finding the ideal scale that closes the gap, or toggle resizehints to 0 in config.h.
+This will cause dwm to ignore resize requests from all client windows, not just terminals. The downside to this workaround is that some terminals may suffer redraw anomalies, such as ghost lines and premature line wraps, among others."><meta itemprop="datePublished" content="2019-04-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-04-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="864">
+<meta itemprop="wordCount" content="962">
 <meta itemprop="keywords" content="Pentesting,Security,Linux,Arch," />
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fix Screen Burpsuite-Java"/>
-<meta name="twitter:description" content="This is the config.h file /* See LICENSE file for copyright and license details. */ /* appearance */ static const unsigned int borderpx = 3; /* border pixel of windows */ static const unsigned int gappx = 10; /* gaps between windows */ static const unsigned int snap = 32; /* snap pixel */ static const int swallowfloating = 0; /* 1 means swallow floating windows by default */ static const int showbar = 1; /* 0 means no bar */ static const int topbar = 1; /* 0 means bottom bar */ static const char *fonts[] = { &#34;JetBrains Mono:size=11&#34;, &#34;JoyPixels:pixelsize=11:antialias=true:autohint=true&#34;}; static const char dmenufont[] = &#34;JetBrains Mono:size=11&#34;; static char normbgcolor[] = &#34;#282a36&#34;; static char normbordercolor[] = &#34;#5b5b5b&#34;; static char normfgcolor[] = &#34;#d77309&#34;; static char selfgcolor[] = &#34;#bcbcbc&#34;; static char selbordercolor[] = &#34;#d77309&#34;; static char selbgcolor[] = &#34;#282a36&#34;; static char *colors[][3] = { /* fg bg border */ [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor }, [SchemeSel] = { selfgcolor, selbgcolor, selbordercolor }, }; /* tagging */ static const char *tags[] = { &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34; }; static const Rule rules[] = { /* xprop(1): *	WM_CLASS(STRING) = instance, class *	WM_NAME(STRING) = title */ /* class instance title tags mask isfloating isterminal noswallow monitor */ { &#34;TelegramDesktop&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;obs&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;Lutris&#34;, NULL, NULL, 0, 1, 0, 0, -1 }, { &#34;firefox&#34;, NULL, NULL, 1 &lt;&lt; 2, 0, 0, -1, -1 }, { &#34;St&#34;, NULL, NULL, 0, 0, 1, 0, -1 }, { NULL, NULL, &#34;Event Tester&#34;, 0, 0, 0, 1, -1 }, /* xev */ }; /* layout(s) */ static const float mfact = 0."/>
+<meta name="twitter:title" content="Fixing gaps around terminal windows Burpsuite"/>
+<meta name="twitter:description" content="If there are empty gaps of desktop space outside terminal windows, it is likely due to the terminal&rsquo;s font size. Either adjust the size until finding the ideal scale that closes the gap, or toggle resizehints to 0 in config.h.
+This will cause dwm to ignore resize requests from all client windows, not just terminals. The downside to this workaround is that some terminals may suffer redraw anomalies, such as ghost lines and premature line wraps, among others."/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -85,7 +88,7 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Fix Screen Burpsuite-Java</h1>
+			<h1 class="post__title">Fixing gaps around terminal windows Burpsuite</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-04-02T00:00:00Z">2019-04-02</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/theplaybook/categories/development/" rel="category">Development</a>, <a class="meta__link" href="/theplaybook/categories/dwm/" rel="category">DWM</a>
@@ -105,7 +108,11 @@
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<!-- raw HTML omitted -->
+			<p>If there are empty gaps of desktop space outside terminal windows, it is likely due to the terminal&rsquo;s font size. Either adjust the size until finding the ideal scale that closes the gap, or toggle resizehints to 0 in config.h.</p>
+<p>This will cause dwm to ignore resize requests from all client windows, not just terminals. The downside to this workaround is that some terminals may suffer redraw anomalies, such as ghost lines and premature line wraps, among others.</p>
+<p>Alternatively, if you use the st terminal emulator, you can apply the anysize patch and recompile st.
+see this <a href="https://wiki.archlinux.org/title/Dwm#Fixing_misbehaving_Java_applications">doc</a>.</p>
+<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h2 id="this-is-the-configh-file">This is the config.h file</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* See LICENSE file for copyright and license details. */</span>
@@ -237,7 +244,6 @@
 </span></span></code></pre></div><p><a href="https://www.notion.so/Fix-Screen-Burp-etc-Resolution-18dfa051094041b7a5318d4fa2eb324c?d=3aee49937a6d4db3b11b15198d833795&amp;pvs=4#c2baf2decdde4ea39bc843e54609dc71">https://www.notion.so/Fix-Screen-Burp-etc-Resolution-18dfa051094041b7a5318d4fa2eb324c?d=3aee49937a6d4db3b11b15198d833795&amp;pvs=4#c2baf2decdde4ea39bc843e54609dc71</a></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-
 		</div>
 		<footer class="post__footer">
 			
@@ -290,7 +296,7 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/fix-screen-jar/">Fix Screen Burpsuite-Java</a></li>
+			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/fix-screen-jar/">Fixing gaps around terminal windows Burpsuite</a></li>
 			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/dwm/">Dynamic Window Manager (Suckless)</a></li>
 			<li class="widget__item"><a class="widget__link" href="/theplaybook/docs/cyber-security/">Cyber Security Academy</a></li>
 		</ul>

@@ -13,7 +13,7 @@
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://0xZipp0.github.io/theplaybook/docs/dwm/</guid>
-      <description>What is DWM ? The suckless developers created DWM, which stands for dynamic window manager. It’s a tiling window manager with a minimalist design. It takes less than 500MB of RAM and only a few processes when it first starts up. First and foremost, there is only one correct way to install dwm and other Suckless tools: from source (either straight from suckless.org , or from your own build, or from someone else’s build, though I wouldn’t recommend that unless you really trust the person) and compile it yourself.</description>
+      <description>&lt;p&gt;The suckless developers created DWM, which stands for dynamic window manager. It’s a tiling window manager with a minimalist design. It takes less than 500MB of RAM and only a few processes when it first starts up. First and foremost, there is only one correct way to install dwm and other Suckless tools: from source (either straight from suckless.org).&lt;/p&gt;</description>
     </item>
     
   </channel>
