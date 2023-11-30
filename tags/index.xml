@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on yusuf aziz mustofa</title>
+    <link>https://0xZipp0.github.io/theplaybook/tags/</link>
+    <description>Recent content in Tags on yusuf aziz mustofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://0xZipp0.github.io/theplaybook/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/arch/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/linux/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pentesting</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/pentesting/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/pentesting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/security/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DWM</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/dwm/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/dwm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suckless</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/suckless/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/suckless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tryhackme</title>
+      <link>https://0xZipp0.github.io/theplaybook/tags/tryhackme/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/tags/tryhackme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

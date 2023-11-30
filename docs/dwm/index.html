@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dynamic Window Manager (Suckless) - yusuf aziz mustofa</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/theplaybook/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/theplaybook/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/theplaybook/" title="yusuf aziz mustofa" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">yusuf aziz mustofa</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Dynamic Window Manager (Suckless)</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="what-is-dwm-"><strong>What is DWM ?</strong></h1>
+<p>The suckless developers created DWM, which stands for dynamic window manager. It’s a tiling window manager with a minimalist design. It takes less than 500MB of RAM and only a few processes when it first starts up. First and foremost, there is only one correct way to install dwm and other Suckless tools: from source (either straight from suckless.org , or from your own build, or from someone else’s build, though I wouldn’t recommend that unless you really trust the person) and compile it yourself.</p>
+<h1 id="dependencies-for-dwm"><strong>Dependencies for DWM</strong></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#f92672">**</span><span style="color:#a6e22e">On</span> <span style="color:#a6e22e">Arch</span> <span style="color:#a6e22e">Linux</span><span style="color:#f92672">:**</span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">pacman</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">S</span> <span style="color:#a6e22e">base</span> <span style="color:#a6e22e">base</span><span style="color:#f92672">-</span><span style="color:#a6e22e">devel</span> <span style="color:#a6e22e">libx11</span> <span style="color:#a6e22e">libxft</span> <span style="color:#a6e22e">libxinerama</span> <span style="color:#a6e22e">freetype2</span> <span style="color:#a6e22e">fontconfig</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#a6e22e">after</span> <span style="color:#a6e22e">installation</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">before</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">dwm</span>}<span style="color:#f92672">:</span> <span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">pacman</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">S</span> <span style="color:#a6e22e">xorg</span> <span style="color:#a6e22e">xorg</span><span style="color:#f92672">-</span><span style="color:#a6e22e">server</span> <span style="color:#a6e22e">xorg</span><span style="color:#f92672">-</span><span style="color:#a6e22e">apps</span> <span style="color:#a6e22e">xorg</span><span style="color:#f92672">-</span><span style="color:#a6e22e">xinit</span> <span style="color:#a6e22e">xclip</span>
+</span></span></code></pre></div><blockquote>
+<p><del><em>&lt;!&gt; we have already install all dependencies of dwm before &lt;!&gt;</em></del></p>
+</blockquote>
+<h1 id="how-to-install-dwm"><strong>How to install DWM</strong></h1>
+<p>Here i have already installed Arch and gnome in it, hence i also have a Display manager and will be explaining , on how to start dwm using startx.</p>
+<p><strong>step1: Clone</strong></p>
+<p>As a result, the first step in installing DWM is to clone the github source from suckless or anyone else. Let’s now create a directory for all of the repositories(You may call your directory whatever you wish)</p>
+<pre tabindex="0"><code>mkdir .suckless
+cd .suckless
+</code></pre><p>Now lets clone the repository required for our build , here for simplicity we will be using st as the default terminal. You can change your preferred terminal in config.h file in the dwm directory.</p>
+<pre tabindex="0"><code>git clone https://github.com/0xzipp0/dwm.git
+git clone https://github.com/0xZipp0/st.git
+git clone https://github.com/0xzipp0/dmenu.git
+</code></pre><p><strong>step 2 : Compiling the code</strong></p>
+<p>Now to need to go the dwm , st and dmenu directory to <code>make</code> and then run <code>sudo make install</code>. For making it easier for you , you can copy the code below and run it in your terminal.</p>
+<pre tabindex="0"><code>cd .suckless
+cd dwm
+make
+sudo make clean install
+cd..
+
+cd st
+make
+sudo make clean install
+cd ..
+
+cd dmenu
+make
+sudo make clean install
+cd
+</code></pre><p><strong>step 3 :Starting dwm</strong></p>
+<p>If you’re using startx, simply add exec /usr/local/bin/dwm at the end of your .xinitrc file on Linux</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#f92672">**</span><span style="color:#a6e22e">cp</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">etc</span><span style="color:#f92672">/</span><span style="color:#a6e22e">X11</span><span style="color:#f92672">/</span><span style="color:#a6e22e">xinit</span><span style="color:#f92672">/</span><span style="color:#a6e22e">xinitrc</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#f92672">/</span><span style="color:#a6e22e">home</span><span style="color:#f92672">/</span><span style="color:#a6e22e">user</span><span style="color:#f92672">/</span>.<span style="color:#a6e22e">xinitrc</span><span style="color:#f92672">**</span> 
+</span></span></code></pre></div><p>edit this copy of the pre exisitng .xinitrc file by delting last fe lines and replacing with e</p>
+<p>exec dwm or with loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>				dwm &gt;/dev/null 2&amp;<span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/dwm/" rel="tag">DWM</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/suckless/" rel="tag">Suckless</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/linux/" rel="tag">Linux</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/arch/" rel="tag">Arch</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 yusuf aziz mustofa.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/theplaybook/js/menu.js"></script>
+</body>
+</html>

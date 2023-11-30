@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tryhackme on yusuf aziz mustofa</title>
+    <link>https://0xZipp0.github.io/theplaybook/tags/tryhackme/</link>
+    <description>Recent content in tryhackme on yusuf aziz mustofa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://0xZipp0.github.io/theplaybook/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Security Academy</title>
+      <link>https://0xZipp0.github.io/theplaybook/docs/cyber-security/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xZipp0.github.io/theplaybook/docs/cyber-security/</guid>
+      <description>Contents About Introduction and Pre-Security - (Completed/In Progress) Free Beginner Red Team Path - (Add your badge here. The badge code is hidden in this repo) Free Beginner Blue Team Path - (Add your badge here. The badge code is hidden in this repo) Bonus CTF practice and Latest CVEs - (Completed/In Progress) Bonus Windows - (Completed/In Progress) Extremely Hard Rooms to do - (Completed/In Progress) About Cyber Security University is A curated list of awesome and free educational resources that focus on learning by doing.</description>
+    </item>
+    
+  </channel>
+</rss>

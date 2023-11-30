@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fix Screen Burpsuite-Java - yusuf aziz mustofa</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/theplaybook/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/theplaybook/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/theplaybook/" title="yusuf aziz mustofa" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">yusuf aziz mustofa</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Fix Screen Burpsuite-Java</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="this-is-the-configh-file">This is the config.h file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* See LICENSE file for copyright and license details. */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* appearance */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> borderpx  <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;        <span style="color:#75715e">/* border pixel of windows */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> gappx     <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;        <span style="color:#75715e">/* gaps between windows */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> snap      <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>;       <span style="color:#75715e">/* snap pixel */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> swallowfloating    <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;        <span style="color:#75715e">/* 1 means swallow floating windows by default */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> showbar            <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;        <span style="color:#75715e">/* 0 means no bar */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> topbar             <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;        <span style="color:#75715e">/* 0 means bottom bar */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>fonts[]          <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;JetBrains Mono:size=11&#34;</span>, <span style="color:#e6db74">&#34;JoyPixels:pixelsize=11:antialias=true:autohint=true&#34;</span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> dmenufont[]       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JetBrains Mono:size=11&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> normbgcolor[]           <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#282a36&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> normbordercolor[]       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#5b5b5b&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> normfgcolor[]           <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#d77309&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> selfgcolor[]            <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#bcbcbc&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> selbordercolor[]        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#d77309&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> selbgcolor[]            <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#282a36&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>colors[][<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e">/*               fg           bg           border   */</span>
+</span></span><span style="display:flex;"><span>       [SchemeNorm] <span style="color:#f92672">=</span> { normfgcolor, normbgcolor, normbordercolor },
+</span></span><span style="display:flex;"><span>       [SchemeSel]  <span style="color:#f92672">=</span> { selfgcolor,  selbgcolor,  selbordercolor  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* tagging */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>tags[] <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> Rule rules[] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* xprop(1):
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	 *	WM_CLASS(STRING) = instance, class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	 *	WM_NAME(STRING) = title
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	 */</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* class                instance  title           tags mask  isfloating  isterminal  noswallow  monitor */</span>
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;TelegramDesktop&#34;</span>,    NULL,     NULL,           <span style="color:#ae81ff">0</span>,         <span style="color:#ae81ff">1</span>,          <span style="color:#ae81ff">0</span>,           <span style="color:#ae81ff">0</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;obs&#34;</span>,                NULL,     NULL,           <span style="color:#ae81ff">0</span>,         <span style="color:#ae81ff">1</span>,          <span style="color:#ae81ff">0</span>,           <span style="color:#ae81ff">0</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;Lutris&#34;</span>,             NULL,     NULL,           <span style="color:#ae81ff">0</span>,         <span style="color:#ae81ff">1</span>,          <span style="color:#ae81ff">0</span>,           <span style="color:#ae81ff">0</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;firefox&#34;</span>,        		NULL,     NULL,           <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">2</span>,    <span style="color:#ae81ff">0</span>,          <span style="color:#ae81ff">0</span>,          <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;St&#34;</span>,                 NULL,     NULL,           <span style="color:#ae81ff">0</span>,         <span style="color:#ae81ff">0</span>,          <span style="color:#ae81ff">1</span>,           <span style="color:#ae81ff">0</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ NULL,                 NULL,     <span style="color:#e6db74">&#34;Event Tester&#34;</span>, <span style="color:#ae81ff">0</span>,         <span style="color:#ae81ff">0</span>,          <span style="color:#ae81ff">0</span>,           <span style="color:#ae81ff">1</span>,        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> }, <span style="color:#75715e">/* xev */</span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* layout(s) */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> mfact     <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.55</span>; <span style="color:#75715e">/* factor of master area size [0.05..0.95] */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> nmaster     <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;    <span style="color:#75715e">/* number of clients in master area */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> resizehints <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;    <span style="color:#75715e">/* 1 means respect size hints in tiled resizals */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> Layout layouts[] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* symbol     arrange function */</span>
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;[]=&#34;</span>,      tile },    <span style="color:#75715e">/* first entry is default */</span>
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;&gt;&lt;&gt;&#34;</span>,      NULL },    <span style="color:#75715e">/* no layout function means floating behavior */</span>
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;[M]&#34;</span>,      monocle },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* key definitions */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define MODKEY Mod1Mask
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define TAGKEYS(KEY,TAG) \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	{ MODKEY,                       KEY,      view,           {.ui = 1 &lt;&lt; TAG} }, \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 &lt;&lt; TAG} }, \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 &lt;&lt; TAG} }, \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 &lt;&lt; TAG} },
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* helper for spawning shell commands in the pre dwm-5.0 fashion */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define SHCMD(cmd) { .v = (const char*[]){ &#34;/bin/sh&#34;, &#34;-c&#34;, cmd, NULL } }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* commands */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> dmenumon[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0&#34;</span>; <span style="color:#75715e">/* component of dmenucmd, manipulated in spawn() */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>dmenucmd[] <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;dmenu_run&#34;</span>, <span style="color:#e6db74">&#34;-m&#34;</span>, dmenumon, <span style="color:#e6db74">&#34;-fn&#34;</span>, dmenufont};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>termcmd[]  <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;st&#34;</span>, NULL };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> Key keys[] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* modifier                     key        function        argument */</span>
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_l,      setmfact,       {.f <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0.05</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_Left,   focusstack,     {.i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_Right,  focusstack,     {.i <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_h,      setmfact,       {.f <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0.05</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_g,      togglebar,      {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_f,	     zoom,           {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_d,      incnmaster,     {.i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_s,      incnmaster,     {.i <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,		                    XK_q,      killclient,     {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_w,      setlayout,      {.v <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>layouts[<span style="color:#ae81ff">0</span>]} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_e,      setlayout,      {.v <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>layouts[<span style="color:#ae81ff">1</span>]} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_r,      setlayout,      {.v <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>layouts[<span style="color:#ae81ff">2</span>]} },
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,             XK_r,  	   togglefloating, {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_t,  	   setlayout,      {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_space,  spawn,          {.v <span style="color:#f92672">=</span> dmenucmd } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,		                  	XK_Return, spawn,          {.v <span style="color:#f92672">=</span> termcmd } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_Tab,    view,           {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_0,      view,           {.ui <span style="color:#f92672">=</span> <span style="color:#f92672">~</span><span style="color:#ae81ff">0</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,             XK_0,      tag,            {.ui <span style="color:#f92672">=</span> <span style="color:#f92672">~</span><span style="color:#ae81ff">0</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_comma,  focusmon,       {.i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_period, focusmon,       {.i <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,             XK_comma,  tagmon,         {.i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,             XK_period, tagmon,         {.i <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,		                  	XK_minus,  setgaps,	       {.i <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,			                  XK_equal,  setgaps,	       {.i <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,		          XK_equal,  setgaps,	       {.i <span style="color:#f92672">=</span>  <span style="color:#ae81ff">0</span> } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_F5,     xrdb,           {.v <span style="color:#f92672">=</span> NULL } },
+</span></span><span style="display:flex;"><span>	{ MODKEY,                       XK_p,      spawn,          <span style="color:#a6e22e">SHCMD</span>(<span style="color:#e6db74">&#34;rofi -show drun&#34;</span>) },
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_1,                      <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_2,                      <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_3,                      <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_4,                      <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_5,                      <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_6,                      <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_7,                      <span style="color:#ae81ff">6</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_8,                      <span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">TAGKEYS</span>(                        XK_9,                      <span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span>	{ MODKEY<span style="color:#f92672">|</span>ShiftMask,	           	XK_q,      quit,           {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* button definitions */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> Button buttons[] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* click                event mask      button          function        argument */</span>
+</span></span><span style="display:flex;"><span>	{ ClkLtSymbol,          <span style="color:#ae81ff">0</span>,              Button1,        setlayout,      {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkLtSymbol,          <span style="color:#ae81ff">0</span>,              Button3,        setlayout,      {.v <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>layouts[<span style="color:#ae81ff">2</span>]} },
+</span></span><span style="display:flex;"><span>	{ ClkWinTitle,          <span style="color:#ae81ff">0</span>,              Button2,        zoom,           {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkStatusText,        <span style="color:#ae81ff">0</span>,              Button2,        spawn,          {.v <span style="color:#f92672">=</span> termcmd } },
+</span></span><span style="display:flex;"><span>	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkTagBar,            <span style="color:#ae81ff">0</span>,              Button1,        view,           {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkTagBar,            <span style="color:#ae81ff">0</span>,              Button3,        toggleview,     {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkTagBar,            MODKEY,         Button1,        tag,            {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {<span style="color:#ae81ff">0</span>} },
+</span></span><span style="display:flex;"><span>};s
+</span></span></code></pre></div><p><a href="https://www.notion.so/Fix-Screen-Burp-etc-Resolution-18dfa051094041b7a5318d4fa2eb324c?d=3aee49937a6d4db3b11b15198d833795&amp;pvs=4#c2baf2decdde4ea39bc843e54609dc71">https://www.notion.so/Fix-Screen-Burp-etc-Resolution-18dfa051094041b7a5318d4fa2eb324c?d=3aee49937a6d4db3b11b15198d833795&amp;pvs=4#c2baf2decdde4ea39bc843e54609dc71</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/pentesting/" rel="tag">Pentesting</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/security/" rel="tag">Security</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/linux/" rel="tag">Linux</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/theplaybook/tags/arch/" rel="tag">Arch</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 yusuf aziz mustofa.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/theplaybook/js/menu.js"></script>
+</body>
+</html>
